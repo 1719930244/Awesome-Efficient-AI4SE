@@ -6,7 +6,7 @@ This document provides supplementary materials for our survey paper "Efficient A
 
 - **Time window**: 2018-01-01 to 2026-02-05 (inclusive)
 - **Programmatic snapshot**: OpenAlex Works API snapshot executed on 2026-02-03 (PRISMA-style counts are reported in the manuscript)
-- **Core synthesis size**: 100 primary studies (manuscript, February 2026)
+- **Core synthesis size**: 98 primary studies (manuscript, February 2026)
 
 ## Related Surveys
 
