@@ -1,0 +1,24 @@
+category,metric_name,count,percentage,total_analyzed
+Task Quality,Accuracy,74,77.9,95
+Computational,Parameters,60,63.2,95
+Environmental,Monetary cost,53,55.8,95
+Task Quality,Precision / Recall,50,52.6,95
+Computational,Latency,50,52.6,95
+Composite,Quality-cost trade-off,48,50.5,95
+Task Quality,MRR / Recall@k,38,40.0,95
+Computational,Speedup ratio,32,33.7,95
+Computational,Peak memory,29,30.5,95
+Task Quality,F1 score,28,29.5,95
+Task Quality,pass@k,26,27.4,95
+Composite,Tokens / Turns (agent cost),26,27.4,95
+Task Quality,BLEU / CodeBLEU,22,23.2,95
+Computational,FLOPs,19,20.0,95
+Environmental,Energy consumption,17,17.9,95
+Environmental,Carbon emissions,17,17.9,95
+Computational,Training time,16,16.8,95
+Computational,Throughput,14,14.7,95
+Task Quality,Resolve rate / Fix rate,11,11.6,95
+Task Quality,Code coverage,8,8.4,95
+Composite,Compression ratio,5,5.3,95
+Task Quality,AUROC / AUC,4,4.2,95
+Computational,Tail latency (P50/P95/P99),2,2.1,95
