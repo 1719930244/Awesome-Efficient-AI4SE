@@ -48,8 +48,8 @@ P1 Cascade and Gating, P2 Retrieve then Generate, P3 Speculate then Verify, P4 C
 - No single pattern dominates all deployment contexts
 
 ### RQ3: Evaluation Practices
-- Efficiency evaluation concentrates on parameters (61%) and latency (51%)
-- Only 17% report energy or carbon metrics
+- Efficiency evaluation concentrates on parameters (63.2%) and latency (52.6%)
+- Only 17.9% report energy or carbon metrics
 - Only 40% disclose serving configuration
 - Reporting checklist proposed to improve cross-study comparability
 

@@ -32,6 +32,7 @@ A curated list of papers on **Efficient AI for Software Engineering**, accompany
   - [Software Agents](#software-agents)
   - [Test Generation](#test-generation)
 - [Efficiency-Oriented Benchmarks](#efficiency-oriented-benchmarks)
+- [Seven Efficiency Patterns](#seven-efficiency-patterns)
 - [Code Pre-trained Models](#code-pre-trained-models)
 - [Supplementary Materials](#supplementary-materials)
 
@@ -63,7 +64,7 @@ A curated list of papers on **Efficient AI for Software Engineering**, accompany
 |-------|-------|------|-------|:-----:|:--------:|----------------------|----------------------|
 | ⭐ LoRACode: LoRA Adapters for Code Embeddings | ICLR | 2024 | [OpenReview](https://openreview.net/forum?id=b0foNPsPaH) | I2 | W2 | <2% trainable params, 50%+ VRAM reduction | S1: LoRA adapters for code embeddings |
 | ⭐ PEFT for Large Models: A Comprehensive Survey | arXiv | 2024 | [arXiv](https://arxiv.org/abs/2403.14608) | I2 | W2 | PEFT efficiency for code tasks | S2: General PEFT survey covering code tasks |
-| ⭐ Astraios: Parameter-Efficient Instruction Tuning Code LLMs | ICLR | 2025 | [arXiv](https://arxiv.org/abs/2401.00788) | I2 | W2 | PEFT comparison, accuracy-efficiency tradeoff | S1: PEFT comparison for code LLMs |
+| ⭐ Astraios: Parameter-Efficient Instruction Tuning Code LLMs | ICLR | 2025 | [arXiv](https://arxiv.org/abs/2401.00788) \| [OpenReview](https://openreview.net/forum?id=dAiUf1MAbS) | I2 | W2 | PEFT comparison, accuracy-efficiency tradeoff | S1: PEFT comparison for code LLMs |
 | ⭐ PEFT of Small LMs for Code Generation (Gemma/Qwen/Llama) | IJECE | 2026 | [Paper](https://doi.org/10.11591/ijece.v16i1.pp278-287) | I2 | W1, W2 | PEFT on 1–3B models, training cost reduction | S1: PEFT for code generation on small models |
 
 ### Efficient Inference
@@ -81,14 +82,14 @@ A curated list of papers on **Efficient AI for Software Engineering**, accompany
 | ⭐ Speculative Decoding for Verilog | arXiv | 2025 | [arXiv](https://arxiv.org/abs/2503.14153) | I3 | W2 | Speculative decoding for hardware code | S1: Speculative decoding for hardware code |
 | ⭐ FrugalGPT: How to Use LLMs While Reducing Cost | arXiv | 2023 | [arXiv](https://arxiv.org/abs/2305.05176) | I3 | W1, W2, W4 | 98% cost reduction via cascade | S2: General LLM cascade framework |
 | ⭐ RouteLLM: Learning to Route LLMs with Preference Data | ICLR | 2025 | [arXiv](https://arxiv.org/abs/2406.18665) \| [OpenReview](https://openreview.net/forum?id=8sSqNntaMr) | I3 | W1, W2, W4 | 2× cost reduction via routing | S2: General LLM routing framework |
-| ⭐ Hybrid LLM: Cost-Efficient and Quality-Aware Query Routing | ICLR | 2024 | [arXiv](https://arxiv.org/abs/2404.14618) | I3 | W1, W4 | 40% API call reduction | S2: General hybrid routing framework |
+| ⭐ Hybrid LLM: Cost-Efficient and Quality-Aware Query Routing | ICLR | 2024 | [arXiv](https://arxiv.org/abs/2404.14618) \| [OpenReview](https://openreview.net/forum?id=02f3mUtqnM) | I3 | W1, W4 | 40% API call reduction | S2: General hybrid routing framework |
 | ⭐ AutoMix: Automatically Mixing Language Models | NeurIPS | 2024 | [arXiv](https://arxiv.org/abs/2310.12963) \| [OpenReview](https://openreview.net/forum?id=e6WrwIvgzX) | I3 | W1, W2, W4 | Self-verification escalation | S2: General self-verification escalation |
 
 ### Efficient Architectures
 
 | Paper | Venue | Year | Links | Stage | Workload | Efficiency Dimension | SE Dimension |
 |-------|-------|------|-------|:-----:|:--------:|----------------------|----------------------|
-| ⭐ FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness | NeurIPS | 2022 | [arXiv](https://arxiv.org/abs/2205.14135) | I1 | W1, W2 | Up to 6.7× throughput via IO-aware attention | S3: Adopted by StarCoder, Code Llama, DeepSeek-Coder |
+| ⭐ FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness | NeurIPS | 2022 | [arXiv](https://arxiv.org/abs/2205.14135) \| [OpenReview](https://openreview.net/forum?id=H4DqfPSibmx) | I1 | W1, W2 | Up to 6.7× throughput via IO-aware attention | S3: Adopted by StarCoder, Code Llama, DeepSeek-Coder |
 | ⭐ Switch Transformers: Scaling to Trillion Parameter Models | JMLR | 2022 | [arXiv](https://arxiv.org/abs/2101.03961) | I1 | W1, W2 | MoE sparse activation, reduced active params | S3: MoE architecture adopted by DeepSeek-Coder |
 | ⭐ DeepSeekMoE: Towards Ultimate Expert Specialization | arXiv | 2024 | [arXiv](https://arxiv.org/abs/2401.06066) | I1 | W1, W2 | MoE routing efficiency | S3: MoE design used in DeepSeek-Coder family |
 
@@ -100,7 +101,7 @@ A curated list of papers on **Efficient AI for Software Engineering**, accompany
 
 | Paper | Venue | Year | Links | Stage | Workload | Efficiency Dimension | SE Dimension |
 |-------|-------|------|-------|:-----:|:--------:|----------------------|----------------------|
-| ⭐ EffiCoder: Enhancing Code Generation through Efficiency-Aware Fine-tuning | ICML | 2025 | [arXiv](https://arxiv.org/abs/2410.10209) | I2 | W1, W2 | Efficiency-aware training, correctness+runtime | S1: Efficiency-aware fine-tuning for code generation |
+| ⭐ EffiCoder: Enhancing Code Generation through Efficiency-Aware Fine-tuning | ICML | 2025 | [arXiv](https://arxiv.org/abs/2410.10209) \| [OpenReview](https://openreview.net/forum?id=8bgaOg1TlZ) | I2 | W1, W2 | Efficiency-aware training, correctness+runtime | S1: Efficiency-aware fine-tuning for code generation |
 | ⭐ GREEN-CODE: Learning to Optimize Energy Efficiency in LLM-based Code Generation | arXiv | 2025 | [arXiv](https://arxiv.org/abs/2501.11006) | I2 | W1 | Energy-aware code generation | S1: Energy-efficient code generation |
 | ⭐ Arctic-SnowCoder: Demystifying High-Quality Data in Code Pretraining | arXiv | 2024 | [arXiv](https://arxiv.org/abs/2409.02326) | I0 | W2 | Data quality over scale, 1.3B outperforms larger | S1: Data-efficient code pretraining |
 | ⭐ Code Less, Align More: Efficient LLM Fine-tuning with Data Pruning | arXiv | 2024 | [arXiv](https://arxiv.org/abs/2407.05040) | I0 | W2 | Data pruning for alignment | S1: Data pruning for code alignment |
@@ -118,7 +119,7 @@ A curated list of papers on **Efficient AI for Software Engineering**, accompany
 |-------|-------|------|-------|:-----:|:--------:|----------------------|----------------------|
 | ⭐ Fast and Memory-Efficient Neural Code Completion | MSR | 2021 | [arXiv](https://arxiv.org/abs/2004.13651) | I1 | W1 | CNN-Transformer hybrid, latency reduction | S1: CNN-Transformer for code completion |
 | ⭐ A Transformer-Based Approach for Smart Invocation of Automatic Code Completion | arXiv | 2024 | [arXiv](https://arxiv.org/abs/2405.14753) | I3 | W1 | Invocation prediction, unnecessary call reduction | S1: Invocation prediction for code completion |
-| ⭐ CodeSage: Code Representation Learning At Scale | ICLR | 2024 | [arXiv](https://arxiv.org/abs/2402.01935) \| [GitHub](https://github.com/amazon-science/CodeSage) | I1 | W3 | Scalable encoder, inference efficiency | S1: Scalable code representation learning |
+| ⭐ CodeSage: Code Representation Learning At Scale | ICLR | 2024 | [arXiv](https://arxiv.org/abs/2402.01935) \| [OpenReview](https://openreview.net/forum?id=vfzRRjumpX) \| [GitHub](https://github.com/amazon-science/CodeSage) | I1 | W3 | Scalable encoder, inference efficiency | S1: Scalable code representation learning |
 | ⭐ CodeTransformer: Modeling ASTs with Self-Attention | ICML Workshop | 2021 | [arXiv](https://arxiv.org/abs/2106.08929) | I1 | W2 | Scope-aware attention reduction | S1: AST-aware attention for code |
 | ⭐ Seismic: Efficient Inverted Indexes for Approximate Retrieval | SIGIR | 2024 | [arXiv](https://arxiv.org/abs/2404.18812) | I4 | W3 | Sub-millisecond code search | S2: General retrieval evaluated on code search |
 | ⭐ DeepCodeSeek: Real-Time API Retrieval | arXiv | 2025 | [arXiv](https://arxiv.org/abs/2509.25716) | I4 | W3 | 2.5× latency reduction via reranker | S1: Real-time API retrieval for code |
@@ -164,8 +165,8 @@ A curated list of papers on **Efficient AI for Software Engineering**, accompany
 
 | Paper | Venue | Year | Links | Stage | Workload | Efficiency Dimension | SE Dimension |
 |-------|-------|------|-------|:-----:|:--------:|----------------------|----------------------|
-| ⭐ SWE-agent: Agent-Computer Interfaces Enable Automated SE | NeurIPS | 2024 | [arXiv](https://arxiv.org/abs/2405.15793) | I4 | W4 | SWE-agent system | S1: Agent for automated software engineering |
-| ⭐ OpenHands: An Open Platform for AI Software Developers | ICLR | 2025 | [arXiv](https://arxiv.org/abs/2407.16741) | I4 | W4 | OpenHands agent system | S1: Platform for AI software developers |
+| ⭐ SWE-agent: Agent-Computer Interfaces Enable Automated SE | NeurIPS | 2024 | [arXiv](https://arxiv.org/abs/2405.15793) \| [OpenReview](https://openreview.net/forum?id=mXpq6ut8J3) | I4 | W4 | SWE-agent system | S1: Agent for automated software engineering |
+| ⭐ OpenHands: An Open Platform for AI Software Developers | ICLR | 2025 | [arXiv](https://arxiv.org/abs/2407.16741) \| [OpenReview](https://openreview.net/forum?id=OJd3ayDDoF) | I4 | W4 | OpenHands agent system | S1: Platform for AI software developers |
 | ⭐ SWE-Pruner: Self-Adaptive Context Pruning for Coding Agents | arXiv | 2025 | [arXiv](https://arxiv.org/abs/2601.16746) | I4 | W4 | 40–60% token reduction via context pruning | S1: Context pruning for coding agents |
 | ⭐ AutoCodeRover: Autonomous Program Improvement | ISSTA | 2024 | [ACM DL](https://dl.acm.org/doi/10.1145/3650212.3680384) | I4 | W4 | <$0.7/task, 30–46% solve rate | S1: Autonomous program improvement |
 | ⭐ CodeAgent: Autonomous Communicative Agents for Code Review | EMNLP | 2024 | [ACL Anthology](https://aclanthology.org/2024.emnlp-main.632/) | I4 | W4 | Multi-agent collaboration | S1: Multi-agent code review |
@@ -176,8 +177,8 @@ A curated list of papers on **Efficient AI for Software Engineering**, accompany
 | ⭐ Adaptive Confidence Gating in Multi-Agent Code Generation | arXiv | 2026 | [arXiv](https://arxiv.org/abs/2601.21469) | I4 | W4 | Confidence-based routing, fewer LLM calls | S1: Confidence-based routing for code generation |
 | ⭐ Scaling Test-Time Compute for Software Engineering | arXiv | 2025 | [arXiv](https://arxiv.org/abs/2502.13767) | I3 | W4 | Test-time compute scaling for SE | S1: Test-time compute scaling for SE |
 | ⭐ Enhancing SE Agents via Scaling Test-Time Compute | arXiv | 2025 | [arXiv](https://arxiv.org/abs/2503.07890) | I3 | W4 | Test-time scaling for agents | S1: Test-time scaling for SE agents |
-| ⭐ Self-Refine: Iterative Refinement with Self-Feedback | NeurIPS | 2023 | [arXiv](https://arxiv.org/abs/2303.17651) | I3 | W2, W4 | 5–40% improvement via self-critique | S2: General self-refinement evaluated on code |
-| ⭐ Reflexion: Language Agents with Verbal Reinforcement Learning | NeurIPS | 2023 | [arXiv](https://arxiv.org/abs/2303.11366) | I3 | W4 | 91% pass@1 via episodic memory | S2: General verbal RL evaluated on HumanEval |
+| ⭐ Self-Refine: Iterative Refinement with Self-Feedback | NeurIPS | 2023 | [arXiv](https://arxiv.org/abs/2303.17651) \| [OpenReview](https://openreview.net/forum?id=S37hOerQLB) | I3 | W2, W4 | 5–40% improvement via self-critique | S2: General self-refinement evaluated on code |
+| ⭐ Reflexion: Language Agents with Verbal Reinforcement Learning | NeurIPS | 2023 | [arXiv](https://arxiv.org/abs/2303.11366) \| [OpenReview](https://openreview.net/forum?id=vAElhFcKW6) | I3 | W4 | 91% pass@1 via episodic memory | S2: General verbal RL evaluated on HumanEval |
 | ⭐ Teaching Large Language Models to Self-Debug | ICLR | 2024 | [arXiv](https://arxiv.org/abs/2304.05128) \| [OpenReview](https://openreview.net/forum?id=KuPixIqPiq) | I3 | W2, W4 | 12% improvement via self-debugging | S1: Teaching LLMs to debug their own code |
 | ⭐ SWE-Effi: Re-Evaluating Under Resource Constraints | arXiv | 2025 | [arXiv](https://arxiv.org/abs/2509.09853) | I3 | W4 | Agent efficiency under resource constraints | S1: SE agent efficiency under resource constraints |
 | ⭐ FuseSearch: Learning Adaptive Parallel Execution for Efficient Code Localization | arXiv | 2026 | [arXiv](https://arxiv.org/abs/2601.19568) | I4 | W4 | 93.6% speedup, 67.7% fewer turns via adaptive parallel search | S1: Adaptive parallel code localization for SE agents |
@@ -188,7 +189,7 @@ A curated list of papers on **Efficient AI for Software Engineering**, accompany
 |-------|-------|------|-------|:-----:|:--------:|----------------------|----------------------|
 | ⭐ CodaMosa: Escaping Coverage Plateaus with Pre-trained LLMs | ICSE | 2023 | [ACM DL](https://dl.acm.org/doi/10.1109/ICSE48619.2023.00085) | I4 | W2 | Hybrid search+LLM testing, coverage improvement | S1: Hybrid search+LLM for test generation |
 | ⭐ ASTER: Natural and Multi-language Unit Test Generation | ICSE SEIP | 2025 | [arXiv](https://arxiv.org/abs/2409.03093) | I4 | W2 | Multi-language test generation | S1: Multi-language unit test generation |
-| ⭐ TestGenEval: Real World Unit Test Generation Benchmark | ICLR | 2025 | [arXiv](https://arxiv.org/abs/2410.00752) | I4 | W2 | Real-world test generation benchmark | S1: Real-world test generation benchmark |
+| ⭐ TestGenEval: Real World Unit Test Generation Benchmark | ICLR | 2025 | [arXiv](https://arxiv.org/abs/2410.00752) \| [OpenReview](https://openreview.net/forum?id=7o6SG5gVev) | I4 | W2 | Real-world test generation benchmark | S1: Real-world test generation benchmark |
 | ⭐ Harnessing LLMs for Automated Software Testing: Scalable Test Case Generation | arXiv | 2025 | [arXiv](https://arxiv.org/abs/2501.05893) | I4 | W2 | Scalable test generation | S1: Scalable test generation |
 | ⭐ How well LLM-based test generation techniques perform with newer LLM versions? | arXiv | 2026 | [arXiv](https://arxiv.org/abs/2601.09695) | I4 | W2 | LLM test generation scalability | S1: LLM test generation scalability |
 | ⭐ CodeT: Code Generation with Generated Tests | ICLR | 2023 | [arXiv](https://arxiv.org/abs/2207.10397) | I3 | W2 | Dual execution agreement | S1: Code generation with generated tests |
@@ -206,7 +207,25 @@ Benchmarks designed with efficiency as a primary evaluation dimension.
 
 ---
 
+## Seven Efficiency Patterns
+
+The survey identifies seven recurring efficiency patterns (P1--P7) that appear across lifecycle stages and workload archetypes.
+
+| Pattern | Name | Description |
+|---------|------|-------------|
+| P1 | Cascade and Gating | Route queries through a sequence of models from cheap to expensive, escalating only when confidence is low |
+| P2 | Retrieve then Generate | Fetch relevant context from an external store before invoking the LLM, reducing prompt length and hallucination |
+| P3 | Speculate then Verify | Draft outputs with a lightweight model and verify with a larger model, accepting correct tokens in bulk |
+| P4 | Cache then Reuse | Store and reuse intermediate results such as KV caches or embeddings to avoid redundant computation |
+| P5 | Adaptive Computation | Dynamically adjust computational effort per input based on difficulty, skipping unnecessary layers or tokens |
+| P6 | Incremental Update | Process only the changed portion of input rather than recomputing from scratch, exploiting temporal locality |
+| P7 | Verifier in the Loop | Integrate a lightweight verifier (e.g., test executor, type checker) to filter or rank candidate outputs early |
+
+---
+
 ## Code Pre-trained Models
+
+> **Note:** The three models without a ⭐ marker (CodeBERT, GraphCodeBERT, UniXcoder) are foundational code pre-trained models listed here for context. They are not part of the 98 primary studies analyzed in the survey.
 
 | Paper | Venue | Year | Links | Stage | Workload | Efficiency Dimension | SE Dimension |
 |-------|-------|------|-------|:-----:|:--------:|----------------------|----------------------|
@@ -235,18 +254,18 @@ Our survey analyzes **98 primary studies** across five lifecycle stages and five
 | Lifecycle Stage | Count | Description |
 |-----------------|:-----:|-------------|
 | I0: Data Preprocessing | 7 | Data curation, deduplication, scaling laws, few-shot example selection |
-| I1: Model Design | 18 | Efficient model architectures (MoE, structure-aware, GNN-based) |
-| I2: Training / Tuning | 20 | PEFT, distillation, quantization, pruning, energy-aware training |
-| I3: Inference / Serving | 29 | Speculative decoding, KV-cache, test-time compute, model routing |
-| I4: Deployment / System | 24 | Agent frameworks, retrieval infrastructure, task-specific deployment |
+| I1: Model Design | 17 | Efficient model architectures (MoE, structure-aware, GNN-based) |
+| I2: Training / Tuning | 19 | PEFT, distillation, quantization, pruning, energy-aware training |
+| I3: Inference / Serving | 24 | Speculative decoding, KV-cache, test-time compute, model routing |
+| I4: Deployment / System | 31 | Agent frameworks, retrieval infrastructure, task-specific deployment |
 
 | Workload Archetype | Count | Description |
 |--------------------|:-----:|-------------|
-| W1: Interactive | 36 | IDE completion, chat assistance, real-time design |
-| W2: Batch / CI | 31 | Test generation, static analysis, code review |
-| W3: Repository-scale | 25 | Code search, clone detection, vulnerability scanning |
-| W4: Agentic | 20 | Multi-step repair, automated debugging, tool-augmented development |
-| W5: Safety-critical | 13 | Security auditing, compliance checks, high-assurance review |
+| W1: Interactive | 27 | IDE completion, chat assistance, real-time design |
+| W2: Batch / CI | 47 | Test generation, static analysis, code review |
+| W3: Repository-scale | 14 | Code search, clone detection, vulnerability scanning |
+| W4: Agentic | 29 | Multi-step repair, automated debugging, tool-augmented development |
+| W5: Safety-critical | 11 | Security auditing, compliance checks, high-assurance review |
 
 ---
 

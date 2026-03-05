@@ -1,6 +1,6 @@
 # Survey Methodology
 
-This document provides supplementary materials for our survey paper "Efficient AI for Software Engineering: A Comprehensive Survey on Models, Tasks, and Evaluation".
+This document provides supplementary materials for our survey paper "Efficient Technology of LLMs in Software Engineering: A Survey on Models, Patterns, and Evaluation".
 
 ## Reproducibility Snapshot (as of 2026-02-05)
 

@@ -47,21 +47,21 @@ Following the **conservative strategy (Option A)**, we selected **26 P0-priority
 
 #### 2. EffiBench: Benchmarking the Efficiency of Automatically Generated Code
 - **Venue**: NeurIPS 2024
-- **Authors**: TBD
+- **Authors**: Dong Huang et al.
 - **Efficiency Gains**: Multi-dimensional efficiency benchmark (execution time, memory)
 - **Links**: [arXiv](https://arxiv.org/abs/2402.02037)
 - **Rationale**: Top-tier venue, establishes efficiency evaluation standard
 
 #### 3. Learning to Optimize Energy Efficiency in LLM-based Code Generation (GREEN-CODE)
 - **Venue**: arXiv 2025
-- **Authors**: TBD
+- **Authors**: Shashikant Ilager et al.
 - **Efficiency Gains**: 23-50% energy reduction via RL-based early exit
 - **Links**: [arXiv](https://arxiv.org/abs/2501.11006)
 - **Rationale**: Energy efficiency focus, significant gains
 
 #### 4. Enhancing Code Generation through Efficiency-Aware Fine-tuning (EffiCoder)
 - **Venue**: arXiv 2024
-- **Authors**: TBD
+- **Authors**: Dong Huang et al.
 - **Efficiency Gains**: 10.18% correctness + 7.75% runtime efficiency on 7B model
 - **Links**: [arXiv](https://arxiv.org/abs/2410.10209)
 - **Rationale**: Efficiency-aware training methodology
@@ -93,7 +93,7 @@ Following the **conservative strategy (Option A)**, we selected **26 P0-priority
 
 #### 8. DeepCodeSeek: Real-Time API Retrieval for Context-Aware Code Generation
 - **Venue**: arXiv 2024
-- **Authors**: TBD
+- **Authors**: Esakkivel Esakkiraja et al.
 - **Efficiency Gains**: 2.5× latency reduction, 0.6B reranker model
 - **Links**: [arXiv](https://arxiv.org/abs/2509.25716)
 - **Rationale**: Real-time retrieval, lightweight reranker
@@ -104,7 +104,7 @@ Following the **conservative strategy (Option A)**, we selected **26 P0-priority
 
 #### 9. White-Basilisk: A Hybrid Model for Code Vulnerability Detection
 - **Venue**: arXiv 2025 + OpenReview
-- **Authors**: TBD
+- **Authors**: Ioannis Lamprou et al.
 - **Efficiency Gains**: 200M params (30× smaller), faster inference, lower energy
 - **Links**: [arXiv](https://arxiv.org/abs/2507.08540) | [OpenReview](https://openreview.net/forum?id=Qq3efdQp3f)
 - **Rationale**: 30× parameter compression, hybrid Mamba+MoE architecture
@@ -118,21 +118,21 @@ Following the **conservative strategy (Option A)**, we selected **26 P0-priority
 
 #### 11. MAGNET: Meta-Path Based Attentional Graph Learning
 - **Venue**: IEEE TSE 2023
-- **Authors**: TBD
+- **Authors**: Xin-Cheng Wen et al.
 - **Efficiency Gains**: Multi-granularity meta-path graphs, efficient heterogeneous attention
 - **Links**: [arXiv](https://arxiv.org/abs/2212.14274) | [IEEE](https://doi.org/10.1109/TSE.2023.3340267)
 - **Rationale**: Top-tier journal, meta-path heterogeneous graph learning
 
 #### 12. FineSec: Distilling Lightweight Language Models for C/C++ Vulnerabilities
 - **Venue**: arXiv 2024
-- **Authors**: TBD
+- **Authors**: Zhiyuan Wei et al.
 - **Efficiency Gains**: Knowledge distillation to compact student models
 - **Links**: [arXiv](https://arxiv.org/abs/2510.06645)
 - **Rationale**: Lightweight model distillation for vulnerability detection
 
 #### 13. MultiGLICE: Combining GNN and Program Slicing
 - **Venue**: Computers (MDPI) 2025
-- **Authors**: Open Universiteit Team
+- **Authors**: Wesley de Kraker et al.
 - **Efficiency Gains**: Configurable inter-procedural analysis depth
 - **Links**: [MDPI](https://www.mdpi.com/2073-431X/14/3/98)
 - **Rationale**: User-adjustable efficiency-accuracy tradeoff
@@ -157,21 +157,21 @@ Following the **conservative strategy (Option A)**, we selected **26 P0-priority
 
 #### 16. RepairLLaMA: Efficient Representations and Fine-Tuned Adapters
 - **Venue**: arXiv 2023
-- **Authors**: TBD
+- **Authors**: André Silva et al.
 - **Efficiency Gains**: LoRA parameter-efficient fine-tuning
 - **Links**: [arXiv](https://arxiv.org/abs/2312.15698)
 - **Rationale**: PEFT for program repair
 
 #### 17. Cost-efficient Program Repair with LLMs (CigaR)
 - **Venue**: arXiv 2024
-- **Authors**: TBD
+- **Authors**: Dávid Hidvégi et al.
 - **Efficiency Gains**: Minimize token usage, lower API costs
 - **Links**: [arXiv](https://arxiv.org/abs/2402.06598)
 - **Rationale**: Cost optimization focus
 
 #### 18. Automated Program Repair via Conversation (ChatGPT)
-- **Venue**: ESEM 2024
-- **Authors**: TBD
+- **Venue**: ISSTA 2024
+- **Authors**: Chunqiu Steven Xia et al.
 - **Efficiency Gains**: $0.42/bug, conversational repair strategy
 - **Links**: [ACM DL](https://dl.acm.org/doi/10.1145/3650212.3680323)
 - **Rationale**: Top-tier venue, cost-efficient conversational approach
@@ -182,35 +182,35 @@ Following the **conservative strategy (Option A)**, we selected **26 P0-priority
 
 #### 19. SWE-Pruner: Self-Adaptive Context Pruning for Coding Agents
 - **Venue**: arXiv 2025
-- **Authors**: TBD
+- **Authors**: Yuhang Wang et al.
 - **Efficiency Gains**: 23-54% token reduction, task-aware pruning
 - **Links**: [arXiv](https://arxiv.org/abs/2601.16746)
 - **Rationale**: Significant token savings for agents
 
 #### 20. AutoCodeRover: Autonomous Program Improvement
 - **Venue**: ISSTA 2024
-- **Authors**: TBD
+- **Authors**: Yuntong Zhang et al.
 - **Efficiency Gains**: <$0.7/task, 30.67-46.2% solve rate
 - **Links**: [ACM DL](https://dl.acm.org/doi/10.1145/3650212.3680384)
 - **Rationale**: Top-tier venue, low-cost autonomous agent
 
 #### 21. SWE-Effi: Re-Evaluating Under Resource Constraints
 - **Venue**: arXiv 2024
-- **Authors**: TBD
+- **Authors**: Zhiyu Fan et al.
 - **Efficiency Gains**: Holistic effectiveness = accuracy + resource consumption
 - **Links**: [arXiv](https://arxiv.org/abs/2509.09853)
 - **Rationale**: First resource-constrained benchmark for SE agents
 
 #### 22. CodeAgent: Autonomous Communicative Agents for Code Review
 - **Venue**: EMNLP 2024
-- **Authors**: TBD
+- **Authors**: Xunzhu Tang et al.
 - **Efficiency Gains**: Multi-agent collaboration, QA-Checker supervision
 - **Links**: [ACL Anthology](https://aclanthology.org/2024.emnlp-main.632/)
 - **Rationale**: Top-tier venue, multi-agent code review
 
 #### 23. RepoNavigator: RL of LLM Agents for Repository-Level Navigation
 - **Venue**: arXiv 2024
-- **Authors**: TBD
+- **Authors**: Zhaoxi Zhang et al.
 - **Efficiency Gains**: 7B model > 14B baseline, single-tool design
 - **Links**: [arXiv](https://arxiv.org/abs/2512.20957)
 - **Rationale**: RL-trained efficient navigation, smaller model outperforms larger
