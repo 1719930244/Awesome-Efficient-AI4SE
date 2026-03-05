@@ -118,7 +118,6 @@ A curated list of papers on **Efficient AI for Software Engineering**, accompany
 |-------|-------|------|-------|:-----:|:--------:|----------------------|----------------------|
 | ⭐ Fast and Memory-Efficient Neural Code Completion | MSR | 2021 | [arXiv](https://arxiv.org/abs/2004.13651) | I1 | W1 | CNN-Transformer hybrid, latency reduction | S1: CNN-Transformer for code completion |
 | ⭐ A Transformer-Based Approach for Smart Invocation of Automatic Code Completion | arXiv | 2024 | [arXiv](https://arxiv.org/abs/2405.14753) | I3 | W1 | Invocation prediction, unnecessary call reduction | S1: Invocation prediction for code completion |
-| ⭐ How GitHub Copilot Manages Latency | arXiv | 2024 | [arXiv](https://arxiv.org/abs/2401.09964) | I3 | W1 | P95 latency analysis, <200ms target | S1: GitHub Copilot latency management |
 | ⭐ CodeSage: Code Representation Learning At Scale | ICLR | 2024 | [arXiv](https://arxiv.org/abs/2402.01935) \| [GitHub](https://github.com/amazon-science/CodeSage) | I1 | W3 | Scalable encoder, inference efficiency | S1: Scalable code representation learning |
 | ⭐ CodeTransformer: Modeling ASTs with Self-Attention | ICML Workshop | 2021 | [arXiv](https://arxiv.org/abs/2106.08929) | I1 | W2 | Scope-aware attention reduction | S1: AST-aware attention for code |
 | ⭐ Seismic: Efficient Inverted Indexes for Approximate Retrieval | SIGIR | 2024 | [arXiv](https://arxiv.org/abs/2404.18812) | I4 | W3 | Sub-millisecond code search | S2: General retrieval evaluated on code search |
@@ -204,7 +203,6 @@ Benchmarks designed with efficiency as a primary evaluation dimension.
 |-------|-------|------|-------|:-----:|:--------:|----------------------|----------------------|
 | ⭐ EffiBench: Benchmarking the Efficiency of Automatically Generated Code | NeurIPS | 2024 | [arXiv](https://arxiv.org/abs/2402.02037) | I3 | W2 | Generated code runtime efficiency | S1: Benchmark for generated code efficiency |
 | ⭐ Learning Performance-Improving Code Edits (PIE) | ICLR | 2024 | [arXiv](https://arxiv.org/abs/2302.07867) | I3 | W2 | Performance improvement editing | S1: Performance-improving code edits |
-| ⭐ SWE-Effi: Re-Evaluating Under Resource Constraints | arXiv | 2025 | [arXiv](https://arxiv.org/abs/2509.09853) | I3 | W4 | Agent efficiency under resource constraints | S1: SE agent efficiency under resource constraints |
 
 ---
 
